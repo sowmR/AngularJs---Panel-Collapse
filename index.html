@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title> Angularjs panel collapse</title>
+  <style rel="stylesheet" href="app.css"/>
+  
+  </head>
+ <body>
+ 
+    <div class="custom-panel" ng-model="collapsed" > 
+        <h3 class="custam-panel-heading">
+          panel-heading 
+             <a ng-click="collapsed=!collapsed">
+           <div class="down-pointer pull-right" toggle-class="up-pointer"></div></a>
+        </h3>
+        <div class="custom-panel-body">
+           <div ng-show="collapsed">
+           <p>Here we display the panel body contents</p>
+           <p>This will be collapsed first and will be displayed when the header is clicked </p>
+        </div>
+      </div>
+
+<!-- Script for the page -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.min.js"></script>
+<script src="app.js">
+
+</body>
+</html>
